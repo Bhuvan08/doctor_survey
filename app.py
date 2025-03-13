@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1BCfQ8oRsP91vdh4U010ra3ifmr1M-ARU
 """
 
-!pip install -q streamlit
+# !pip install -q streamlit
 import streamlit as st
 import pandas as pd
 import joblib  # For loading the trained model
@@ -16,7 +16,7 @@ import joblib  # For loading the trained model
 model = joblib.load("trained_model.pkl")  # Load your saved model
 df = pd.read_excel("dummy_npi_data.xlsx")
 
-!pip install scikit-learn
+# !pip install scikit-learn
 from sklearn.preprocessing import LabelEncoder
 
 # Initialize encoder
